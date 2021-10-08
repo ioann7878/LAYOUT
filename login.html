@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <title>Title</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Стили от плагинов -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Стиль -->
+    <link rel="stylesheet" href="css/style.css?v8666409591">
+</head>
+
+<body style="overflow: hidden; opacity: 0">
+    <root>
+        <!-- Login-layer start -->
+        <div class="auth" style="background-image: url(img/background/login.jpg)">
+            <div class="auth--box">
+                <div class="auth--into"><img class="auth--tie logo" src="img/logo.png" alt="">
+                    <h4 class="auth--faith" href="">petpassport.online</h4>
+                </div>
+                <div class="auth--point">
+                    <div class="active auth--tab" id="login">
+                        <!-- Login-enter start --><input class="form--control form--border form--group" type="text" name="name" placeholder="Логин"><input class="form--control form--border form--group" type="text" name="name" placeholder="Пароль">
+                        <div
+                            class="auth--cry">
+                            <!-- Form-checkbox start -->
+                            <div class="pretty p-default p-curve"><input type="checkbox" name="">
+                                <div class="state"><label><span class="size--13">Запомнить меня</span></label></div>
+                            </div>
+                            <!-- Form-checkbox end --><a class="size--13" href="">Забыли пароль?</a></div>
+                    <div class="auth--say"><button class="btn btn-block btn-blue btn-round btn-bigger size--12 weight--600">Войти</button>
+                        <div class="size--13 style--center auth--sector"><span>Еще не зарегистрированы? </span><a class="gotab" href="#register">Создать аккаунт</a></div>
+                    </div>
+                    <!-- Login-enter end -->
+                </div>
+                <div class="auth--tab" id="register">
+                    <!-- Login-reg start -->
+                    <!-- Form-select start --><select class="form--border form--group wide form--control"><option value="1">Выберите тип аккаунта</option><option value="2">Значение 1</option><option value="3">Значение 2</option></select>
+                    <!-- Form-select end --><input class="form--control form--border form--group" type="text" name="name" placeholder="Имя"><input class="form--control form--border form--group" type="text" name="name" placeholder="Логин (латиницей, без пробелов)"
+                       >
+                    <div class="row">
+                        <div class="col-lg-6"><input class="form--control form--border form--group" type="text" name="name" placeholder="Пароль"></div>
+                        <div class="col-lg-6"><input class="form--control form--border form--group" type="text" name="name" placeholder="Подтвердите пароль"></div>
+                    </div><input class="form--control form--border form--group" type="text" name="name" placeholder="Email">
+                    <div class="auth--say"><button class="btn-blue-style btn btn-block">Создать профиль</button>
+                        <div class="size--13 style--center auth--sector"><span>Есть аккаунт? </span><a class="gotab" href="#login">Войти</a></div>
+                    </div>
+                    <!-- Login-reg end -->
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Login-layer end -->
+    </root>
+    <!-- Наши плагины -->
+    <script src="js/vendor.min.js"></script>
+
+    <!-- Свои скрипты -->
+    <script src="js/custom.js?v8666409591"></script>
+
+    <script type="text/javascript">
+        function cssPropertyValueSupported(prop, value) {
+            var d = document.createElement('div');
+            d.style[prop] = value;
+
+            return d.style[prop] === value;
+        }
+
+        if (!cssPropertyValueSupported('display', 'grid')) {
+            var head = document.getElementsByTagName('head')[0];
+            var link = document.createElement('link');
+
+            link.id = 'oldbrowsersuport';
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/old.browser.autoprefixer.css';
+            link.media = 'all';
+
+            head.appendChild(link);
+        }
+    </script>
+</body>
+
+</html>
